@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Project
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
+    name="aql"
+    label="AQL">
+  <setupTask
+      xsi:type="setup.p2:P2Task">
+    <requirement
+        name="org.eclipse.sphinx.examples.feature.group"/>
+    <requirement
+        name="org.eclipse.sphinx.feature.group"/>
+    <requirement
+        name="org.eclipse.sphinx.sdk.feature.group"/>
+    <repository
+        url="https://download.eclipse.org/sphinx/releases/0.11.x/"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="P2 Artop">
+    <requirement
+        name="org.artop.core.metamodel448.feature.group"/>
+    <requirement
+        name="org.artop.core.autosar448.sdk.feature.group"/>
+    <requirement
+        name="org.artop.examples.feature.group"/>
+    <requirement
+        name="org.artop.ecuc.accessors.feature.group"/>
+    <repository
+        url="https://www.artop.org/containers/artop-sdk-update-site-4.13"/>
+  </setupTask>
+  <stream name="master"
+      label="Master"/>
+  <logicalProjectContainer
+      xsi:type="setup:ProjectCatalog"
+      href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
+  <description>AQL provides cool stuff.</description>
+</setup:Project>
