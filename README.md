@@ -1,2 +1,5 @@
 # webinar-artop
-Repo für Andreas Graf
+
+This repository contains the artifacts from our Artop Webinar.
+
+Code is for informational purposes only.
