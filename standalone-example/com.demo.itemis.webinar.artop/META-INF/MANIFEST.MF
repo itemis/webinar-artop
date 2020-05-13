@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Artop
+Bundle-SymbolicName: com.demo.itemis.webinar.artop
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: DEMO
+Automatic-Module-Name: com.demo.itemis.webinar.artop
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.emf.common;bundle-version="2.16.0",
+ org.eclipse.emf.ecore;bundle-version="2.19.0",
+ org.eclipse.sphinx.emf;bundle-version="0.11.0",
+ org.artop.aal.autosar21;bundle-version="4.13.0",
+ org.artop.aal.autosar40;bundle-version="4.13.0",
+ org.artop.aal.autosar448;bundle-version="4.13.0",
+ org.artop.aal.common;bundle-version="4.13.0",
+ org.artop.aal.serialization;bundle-version="4.13.0",
+ org.artop.eel.serialization;bundle-version="1.1.0"
